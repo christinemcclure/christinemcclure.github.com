@@ -41,26 +41,30 @@
         <h2>New repo creation - no files</h2>
         <ol>
           <li>Make repo in GitHub</li>
-          <li>From computer: git clone git@github.com:camcclure/&lt;repo name&gt;</li>
+          <li>From computer: <code>git clone git@github.com:camcclure/&lt;repo name&gt;</code></li>
           <li>CD to repo directory</li>
-          <li>git push origin master</li>
+          <li><code>git push origin master</code></li>
         </ol>
         <h2>New repo creation - existing files</h2>
         <ol>
           <li>Make repo in GitHub</li>
           <li>CD to project directory</li>
-          <li>git init</li>
-          <li>git add .</li>
-          <li>git commit -m "initial commit"</li>
-          <li>git remote add origin git@github.com:yourname/&lt;repo name&gt;.git</li>
-          <li>git push origin master</li>
+          <li><code>git init</code></li>
+          <li><code>git add .</code></li>
+          <li><code>git commit -m "initial commit"</code></li>
+          <li><code>git remote add origin git@github.com:yourname/&lt;repo name&gt;.git</code></li>
+          <li><code>git push origin master</code></li>
         </ol>
 
         <h2>Delete a branch</h2>
         <h3>Locally</h3>
-        <p>git branch -D &lt;branch name&gt;</p>
+ <pre>
+git branch -D &lt;branch name&gt;
+</pre>
         <h3>Remotely</h3>
-          git push origin --delete &lt;branch name&gt;
+<pre>
+git push origin --delete &lt;branch name&gt;
+</pre>
 
           <h2>Using Multiple GitHub Accounts</h2>
           <p>Example: home computer mainly for personal use, sometimes for work use. Set up another account for Galvin login.</p>
@@ -89,6 +93,18 @@ Host github-galvin.com
     git remote add origin git@github-galvin.com:galvin/reponame.git
     git clone git@github-galvin.com:galvin/reponame.git
 </pre>
+
+          <h2>Working in a project team</h2>
+          <p>Always rebase before you start working to start with the latest version</p>
+          <ol>
+            <li><code>git checkout master</code> // on your branch master</li>
+            <li><code>git pull upstream master</code> // from project remote branch master</li>
+            <li><code>git checkout dev</code> // on branch dev</li>
+            <li><code>git rebase master</code> // on branch dev</li>
+            <li>&lt; Do work on dev branch, making commits locally &gt;</li>
+            <li><code>$ git push origin dev -f</code> // on branch dev (need to force because now your commit numbers will be off from the rebase)</li>
+            <li>Submit pull request from your branch on GitHub</li>
+          </ol>
     </div>
 
     <div class="row-fluid">
