@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en" id="github-com">
+
+<head>
+  <title>Christine McClure: Oh-my-zsh</title>
+  <meta name="description" content="Directions, pointers, and commonly-used cheats">
+  <meta name="author" content="Christine McClure">
+  <meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+      <header class="hero-unit">
+        <h1>Christine McClure</h1>
+        <p>Shortcuts, code snippets, and oft-forgotten directions</p>
+      </header>
+    </div>
+
+    <div class="row-fluid">
+      <ul class="nav nav-pills" name="nav">
+        <li><a href="index.html">Home</a></li>
+            <li><a href="git.html">Git</a></li>
+            <li class="active"><a href="zsh.html">OH-MY-ZSH</a></li>
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="javascript.html">Javascript</a></li>
+        <li><a href="https://github.com/camcclure">camcclure (GitHub)</a></li>
+        <li><a href="https://github.com/galvinlibrary">galvinlibrary (GitHub)</a></li>
+      </ul>
+    </div>
+    <div class="row-fluid">
+        <h2>Installation</h2>
+        <ol>
+          <li>Just use <a class="btn" href="https://github.com/karlstolley/lab/wiki/Oh-My-Zsh">Karl's directions</a> to start.</li>
+          <li>On Mac, change the shell to point to zsh:</li>
+        </ol>
+    
+<pre>
+$ chsh -s /bin/zsh &lt;username&gt;
+</pre>
+
+        <h2>Shortcut aliases:</h2>
+        <pre>
+# Clear screen
+alias c='clear'
+# Git shortcuts
+alias gitck='git checkout'
+alias gits='git status'
+alias gita='git add'
+alias gitm='git commit -m'
+alias gitam='git commit -am'
+alias gitpom='git push origin master'
+alias gitplm='git pull origin master'
+alias gitb='git branch'
+alias gitck 'git checkout'
+alias gitl='git log --pretty=oneline --abbrev-commit'
+alias gitlf='git log --pretty=oneline --abbrev-commit --name-only'
+alias gitdw='git diff --color-words'
+alias gitra='git remote add'
+alias gitcb='git checkout -b'
+        </pre>
+    </div>
+
+    <div class="row-fluid">
+      <footer>
+        <p><a href="#nav">Top</a></p>  <p>&copy; Christine McClure 2012</p>
+      </footer>
+    </div>
+</div> <!-- /container -->
+
+</body>
+
+</html>
