@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en" id="github-com">
+
+<head>
+  <title>Christine McClure: Git</title>
+  <meta name="description" content="Directions, pointers, and commonly-used cheats">
+  <meta name="author" content="Christine McClure">
+  <meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+      <header class="hero-unit">
+        <h1>Christine McClure</h1>
+        <p>The home for my shortcuts, code snippets, and oft-forgotten directions</p>
+        <a href="http://www.christinemcclure.com">www.christinemcclure.com</a>
+      </header>
+    </div>
+
+    <div class="row-fluid">
+      <ul class="nav nav-pills" name="nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="git.html">Git</a></li>
+        <li><a href="zsh.html">OH-MY-ZSH</a></li>
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="javascript.html">Javascript</a></li>
+        <li><a href="https://github.com/camcclure">camcclure (GitHub)</a></li>
+        <li><a href="https://github.com/galvinlibrary">galvinlibrary (GitHub)</a></li>
+      </ul>
+    </div>
+    <div class="row-fluid">
+        <h2>New repo creation - no files</h2>
+        <ol>
+          <li>Make repo in GitHub</li>
+          <li>From computer: git clone git@github.com:camcclure/&lt;repo name&gt;</li>
+          <li>CD to repo directory</li>
+          <li>git push origin master</li>
+        </ol>
+        <h2>New repo creation - existing files</h2>
+        <ol>
+          <li>Make repo in GitHub</li>
+          <li>CD to project directory</li>
+          <li>git init</li>
+          <li>git add .</li>
+          <li>git commit -m "initial commit"</li>
+          <li>git remote add origin git@github.com:yourname/&lt;repo name&gt;.git</li>
+          <li>git push origin master</li>
+        </ol>
+
+        <h2>Delete a branch</h2>
+        <h3>Locally</h3>
+        <p>git branch -D &lt;branch name&gt;</p>
+        <h3>Remotely</h3>
+          git push origin --delete &lt;branch name&gt;
+
+          <h2>Using Multiple GitHub Accounts</h2>
+          <p>Example: home computer mainly for personal use, sometimes for work use. Set up another account for Galvin login.</p>
+          <ol>
+            <li>Create an <a href="https://help.github.com/articles/generating-ssh-keys">SSH key</a>, but instead of accepting the default name of id_rsa, include a tag at the end. I.e. id_rsa_GALVIN</li>
+            <li>Create or edit ~\.ssh\config Add "-'ssh keyname' to the end of the github line."</li>
+<pre>
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa
+
+Host github-galvin.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa_GALVIN
+</pre>
+            <li>Test the new line</li>
+<pre>
+  ssh -T git@github-galvin.com
+</pre>
+          </ol>
+
+          <p>When using the secondary account, only need to use the github alias during the initial clone or add origin:
+<pre>
+    git remote add origin git@github-galvin.com:galvin/reponame.git
+    git clone git@github-galvin.com:galvin/reponame.git
+</pre>
+    </div>
+
+    <div class="row-fluid">
+      <footer>
+        <p><a href="#nav">Top</a></p>  <p>&copy; Christine McClure 2012</p>
+      </footer>
+    </div>
+</div> <!-- /container -->
+
+</body>
+
+</html>
