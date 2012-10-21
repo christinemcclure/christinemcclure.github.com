@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en" id="github-com">
+
+<head>
+  <title>Christine McClure: Sass</title>
+  <meta name="description" content="Directions, pointers, and commonly-used cheats">
+  <meta name="author" content="Christine McClure">
+  <meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+      <header class="hero-unit">
+        <h1>Christine McClure</h1>
+        <p>The home for my shortcuts, code snippets, and oft-forgotten directions</p>
+        <a href="http://www.christinemcclure.com">www.christinemcclure.com</a>
+      </header>
+    </div>
+
+    <div class="row-fluid">
+      <ul class="nav nav-pills" name="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="git.html">Git</a></li>
+        <li><a href="zsh.html">OH-MY-ZSH</a></li>
+        <li class="active"><a href="sass.html">CSS/Sass</a></li>
+        <li><a href="javascript.html">Javascript</a></li>
+        <li><a href="https://github.com/christinemcclure">Repos</a></li>
+        <li><a href="https://github.com/camcclure">camcclure (GitHub)</a></li>
+        <li><a href="https://github.com/galvinlibrary">galvinlibrary (GitHub)</a></li>
+      </ul>
+    </div>
+    <div class="row-fluid">
+        <h2>Compass</h2>
+        <p>Ruby gem for process SCSS files into CSS</p>
+        <p>When you need to compress for production:</p>
+        <ol>
+          <li>Create production branch</li>
+<pre>
+compass compile --output-style compressed --force &lt;directory name&gtad
+</pre>
+          <li>Verify that compresses CSS files were created</li>
+          <li>Merge into master (Sass uses a different directory, so no worry about losing formatting)</li>
+        </ol>
+ 
+    </div>
+
+    <div class="row-fluid">
+      <footer>
+        <p><a href="#nav">Top</a></p>  <p>&copy; Christine McClure 2012</p>
+      </footer>
+    </div>
+</div> <!-- /container -->
+
+</body>
+
+</html>
