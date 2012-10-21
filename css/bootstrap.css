@@ -6719,7 +6719,7 @@ header.hero-unit, footer, .container-fluid {
 }
 
 /* line 5839, ../sass/bootstrap.scss */
-header.hero-unit a.btn:hover, footer a.btn:hover {
+header.hero-unit a.btn:hover, footer a.btn:hover, .container-fluid a.btn:hover {
   background: #b3c914;
 }
 

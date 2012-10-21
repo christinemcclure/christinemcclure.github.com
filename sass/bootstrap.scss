@@ -5835,7 +5835,7 @@ header.hero-unit, footer, .container-fluid{
   @include borderRadius;
 }
 
-header.hero-unit, footer {
+header.hero-unit, footer, .container-fluid {
   a.btn:hover { background:$highlightColorBkgHover;}
 }
 
