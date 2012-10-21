@@ -40,7 +40,41 @@
     <div class="row-fluid">
         <h2>Compass</h2>
         <p>Ruby gem for process SCSS files into CSS</p>
-        <p>When you need to compress for production:</p>
+        <h3>Configuration</h3>
+        <p>These instructions are for non-Ruby projects where you have to configure Sass manually.</p>
+        <ol>
+          <li>Install compass gem, if necessary</li>
+          <li>CD to project directory</li>
+          <li><code>touch config.rb</code></li>
+          <li>Edit file as below, or change to match your file structure (comments are what's generated with the <code>compass create 'proj'</code> command)</li>
+<pre>
+# Require any additional compass plugins here.
+
+# Set this to the root of your project when deployed:
+http_path = "/"
+css_dir = "css"
+sass_dir = "sass"
+images_dir = "images"
+javascripts_dir = "javascripts"
+
+# You can select your preferred output style here (can be overridden via the command line):
+# output_style = :expanded or :nested or :compact or :compressed
+
+# To enable relative paths to assets via compass helper functions. Uncomment:
+# relative_assets = true
+
+# To disable debugging comments that display the original location of your selectors. Uncomment:
+# line_comments = false
+
+
+# If you prefer the indented syntax, you might want to regenerate this
+# project again passing --syntax sass, or you can uncomment this:
+# preferred_syntax = :sass
+# and then run:
+# sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
+</pre>
+        </ol>
+        <h3>When you need to compress for production:</h3>
         <ol>
           <li>Create production branch</li>
 <pre>
