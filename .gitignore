@@ -1,2 +1,5 @@
 // ignore jeckyll server files
 _site
+
+//ignore compass temp files
+.sass-cache/
