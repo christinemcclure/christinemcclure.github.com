@@ -8,6 +8,39 @@
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
 
+/* Color Scheme
+    From: http://www.colourlovers.com/palette/848743/(%E2%97%95_%E2%80%9D_%E2%97%95)
+*/
+
+$purple: rgb(73,10,61);
+$red:    rgb(189,21,80);
+$orange: rgb(233,127,2);
+$yellow: rgb(248,202,0);
+$green:  rgb(138,155,15);
+
+$backgroundColor: $orange;
+$containerColor: lighten($yellow,25%);
+$headerColor: $red;
+$footerColor: $red;
+$textColor: $purple;
+$linkColor: $green;
+$linkHover: $red;
+$highlightColorText: $purple;
+$highlightColorBackground: $green;
+$highlightColorBkgHover: lighten($green,10%);
+$codeColor: darken($red,10%);
+
+$radius: 12px;
+@mixin borderRadius {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -o-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+
+
 article,
 aside,
 details,
@@ -37,6 +70,8 @@ html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
+  background: $backgroundColor;
+  color: $textColor;
 }
 
 a:focus {
@@ -162,17 +197,17 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
-  color: #333333;
-  background-color: #ffffff;
+  color: $textColor;
+  background-color: $backgroundColor;
 }
 
 a {
-  color: #0088cc;
+  color: $linkColor;
   text-decoration: none;
 }
 
 a:hover {
-  color: #005580;
+  color: $linkHover;
   text-decoration: underline;
 }
 
@@ -224,6 +259,7 @@ a:hover {
 .navbar-static-top .container,
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
+  background: $containerColor;
   width: 940px;
 }
 
@@ -563,8 +599,11 @@ a:hover {
 }
 
 .container-fluid {
-  padding-right: 20px;
-  padding-left: 20px;
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 30px;
+  background:$containerColor;
   *zoom: 1;
 }
 
@@ -860,7 +899,7 @@ pre {
 
 code {
   padding: 2px 4px;
-  color: #d14;
+  color: $codeColor;
   background-color: #f7f7f9;
   border: 1px solid #e1e1e8;
 }
@@ -3761,7 +3800,8 @@ input[type="submit"].btn.btn-mini {
 
 .nav > li > a:hover {
   text-decoration: none;
-  background-color: #eeeeee;
+  background-color: $highlightColorText;
+  background-color: $highlightColorBkgHover;
 }
 
 .nav > .pull-right {
@@ -3896,8 +3936,8 @@ input[type="submit"].btn.btn-mini {
 
 .nav-pills > .active > a,
 .nav-pills > .active > a:hover {
-  color: #ffffff;
-  background-color: #0088cc;
+  color: $highlightColorText;
+  background-color: $highlightColorBackground;
 }
 
 .nav-stacked > li {
@@ -5728,7 +5768,7 @@ a.badge:hover {
 .hero-unit {
   padding: 60px;
   margin-bottom: 30px;
-  background-color: #eeeeee;
+  background-color: $headerColor;
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
@@ -5771,4 +5811,21 @@ a.badge:hover {
 
 .affix {
   position: fixed;
+}
+
+
+/* Customizations besides color */
+
+footer {
+  background: $footerColor;
+  padding: 10px 20px 3px 20px;
+  p {
+    display: inline-block;
+  }
+  p + p { float:right;}
+}
+pre{margin: 20px 0;}
+
+header.hero-unit, footer, .container-fluid{
+  @include borderRadius;
 }
