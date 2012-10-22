@@ -729,9 +729,9 @@ h1 small {
 h2 small {
   font-size: 18px;
 }
-
 h3 small {
   font-size: 14px;
+
 }
 
 h4 small {
@@ -5839,7 +5839,32 @@ header.hero-unit, footer, .container-fluid {
   a.btn:hover { background:$highlightColorBkgHover;}
 }
 
-header a {
-  float:right;
-  margin-top: -70px;
+header {
+  text-align:center;
+  @media screen and (min-width: 1200px) {
+    text-align:left;
+  }
+  a {
+    @media screen and (min-width: 1200px) {
+      float:right;
+      margin-top: -70px;
+    }
+  }
+}
+
+footer {
+  text-align:center;
+  background: $footerColor;
+  padding: 10px 20px;
+  p { 
+    color: $yellow;
+    margin-top:7px;
+  }
+  @media screen and (min-width: 1200px) {
+  text-align:left;
+    p {
+      display: inline-block;
+      float:right;
+    }
+  }
 }
