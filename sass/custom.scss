@@ -7,13 +7,13 @@
 pre{margin: 20px 0;}
 
 html {
-  background:url("/img/circles.jpg");
+  background:url("/img/japanese.png");
 }
 
 body {
   margin-top:-30px;
   padding-top: 30px;
-  background: rgba($backgroundColor, .8);
+  background: rgba($backgroundColor, .4);
 }
 
 header.hero-unit, footer, .container-fluid{
@@ -22,6 +22,10 @@ header.hero-unit, footer, .container-fluid{
 
 header.hero-unit, footer, .container-fluid {
   a.btn:hover { background:$highlightColorBkgHover;}
+}
+
+header, footer {
+  border: 3px solid darken($headerColor, 20%);
 }
 
 header {

@@ -1,5 +1,6 @@
 /* base */
 
+
 /* Color Scheme
     From: http://www.colourlovers.com/palette/848743/(%E2%97%95_%E2%80%9D_%E2%97%95)
 */
@@ -10,20 +11,34 @@ $orange: rgb(233,127,2);
 $yellow: rgb(248,202,0);
 $green:  rgb(138,155,15);
 
-$backgroundColor: $orange;
-$containerColor: lighten($yellow,25%);
+/* Color and pattern Scheme from
+http://www.colourlovers.com/pattern/1181271/japanese_art_1
+*/
+
+$tan: rgb(234,195,136);
+$red: rgb(221,66,62);
+$brown: rgb(63,44,38);
+$beige: rgb(162,163,132);
+$gold: rgb(197,173,75);
+
+
+$backgroundColor: $brown;
+$containerColor: lighten($gold,25%);
 $headerColor: $red;
 $footerColor: $red;
-$footerTextColor: $yellow;
-$textColor: $purple;
-$linkColor: $green;
-$btnColor: $green;
-$btnTextColor: $purple;
-$linkHover: $red;
-$highlightColorText: $purple;
-$highlightColorBackground: $green;
-$highlightColorBkgHover: lighten($green,10%);
+$footerTextColor: $brown;
+$textColor: $brown;
+$linkColor: $red;
+$btnColor: $gold;
+$btnTextColor: $red;
+$linkHover: $gold;
+$highlightColorText: $gold;
+$highlightColorBackground: $gold;
+$highlightColorBkgHover: lighten($brown,15%);
 $codeColor: darken($red,10%);
+$darkBorder: $brown;
+$activeBtnText: $gold;
+$activeBtnBackground: $brown;
 
 $radius: 12px;
 
