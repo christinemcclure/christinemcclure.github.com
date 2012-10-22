@@ -6,15 +6,14 @@
 
 pre{margin: 20px 0;}
 
-html {
-  background:url("/img/japanese.png");
-}
 
 body {
   margin-top:-30px;
   padding-top: 30px;
-  background: rgba($backgroundColor, .4);
+  background:url("/img/japanese-transparent.png");
 }
+
+
 
 header.hero-unit, footer, .container-fluid{
   @include borderRadius;
@@ -38,6 +37,18 @@ header {
       float:right;
       margin-top: -70px;
     }
+  }
+}
+
+.container-fluid {
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    width: 80%;
+    margin-top: 60px;
+    margin-bottom: 40px;
   }
 }
 

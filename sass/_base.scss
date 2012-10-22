@@ -10,13 +10,15 @@ $red:    rgb(189,21,80);
 $orange: rgb(233,127,2);
 $yellow: rgb(248,202,0);
 $green:  rgb(138,155,15);
+/* my additions */
+$orange: rgb(213,117,75);
 
 /* Color and pattern Scheme from
 http://www.colourlovers.com/pattern/1181271/japanese_art_1
 */
 
 $tan: rgb(234,195,136);
-$red: rgb(221,66,62);
+$red: darken(rgb(221,66,62),10%);
 $brown: rgb(63,44,38);
 $beige: rgb(162,163,132);
 $gold: rgb(197,173,75);
@@ -24,11 +26,11 @@ $gold: rgb(197,173,75);
 
 $backgroundColor: $brown;
 $containerColor: lighten($gold,25%);
-$headerColor: $red;
-$footerColor: $red;
+$headerColor: $orange;
+$footerColor: $orange;
 $footerTextColor: $brown;
 $textColor: $brown;
-$linkColor: $red;
+$linkColor:$red;
 $btnColor: $gold;
 $btnTextColor: $red;
 $linkHover: $gold;
