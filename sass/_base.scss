@@ -1,0 +1,36 @@
+/* base */
+
+/* Color Scheme
+    From: http://www.colourlovers.com/palette/848743/(%E2%97%95_%E2%80%9D_%E2%97%95)
+*/
+
+$purple: rgb(73,10,61);
+$red:    rgb(189,21,80);
+$orange: rgb(233,127,2);
+$yellow: rgb(248,202,0);
+$green:  rgb(138,155,15);
+
+$backgroundColor: $orange;
+$containerColor: lighten($yellow,25%);
+$headerColor: $red;
+$footerColor: $red;
+$textColor: $purple;
+$linkColor: $green;
+$btnColor: $green;
+$btnTextColor: $purple;
+$linkHover: $red;
+$highlightColorText: $purple;
+$highlightColorBackground: $green;
+$highlightColorBkgHover: lighten($green,10%);
+$codeColor: darken($red,10%);
+
+$radius: 12px;
+
+@mixin borderRadius {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -o-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+

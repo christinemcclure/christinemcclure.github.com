@@ -1,0 +1,46 @@
+/* custom */
+
+@import "bootstrap";
+
+/* Customizations to Bootstrap beyond color */
+
+pre{margin: 20px 0;}
+
+header.hero-unit, footer, .container-fluid{
+  @include borderRadius;
+}
+
+header.hero-unit, footer, .container-fluid {
+  a.btn:hover { background:$highlightColorBkgHover;}
+}
+
+header {
+  text-align:center;
+  @media screen and (min-width: 1200px) {
+    text-align:left;
+  }
+  a {
+    @media screen and (min-width: 1200px) {
+      float:right;
+      margin-top: -70px;
+    }
+  }
+}
+
+
+footer {
+  background: $footerColor;
+  padding: 10px 20px;
+  text-align:center;
+  p {
+    color: $yellow;
+    margin-top:7px;
+  }
+  @media screen and (min-width: 1200px) {
+  text-align:left;
+    p {
+      display: inline-block;
+      float:right;
+    }
+  }
+}
