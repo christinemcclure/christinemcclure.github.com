@@ -38,15 +38,15 @@
       </ul>
     </div>
     <div class="row-fluid">
-        <h2>Compass</h2>
-        <p>Ruby gem for process SCSS files into CSS</p>
-        <h3>Configuration</h3>
-        <p>These instructions are for non-Ruby projects where you have to configure Sass manually.</p>
-        <ol>
-          <li>Install compass gem, if necessary</li>
-          <li>CD to project directory</li>
-          <li><code>touch config.rb</code></li>
-          <li>Edit file as below, or change to match your file structure (comments are what's generated with the <code>compass create 'proj'</code> command)</li>
+      <h2>Compass</h2>
+      <p>Ruby gem for process SCSS files into CSS</p>
+      <h3>Configuration</h3>
+      <p>These instructions are for non-Ruby projects where you have to configure Sass manually.</p>
+      <ol>
+        <li>Install compass gem, if necessary</li>
+        <li>CD to project directory</li>
+        <li><code>touch config.rb</code></li>
+        <li>Edit file as below, or change to match your file structure (comments are what's generated with the <code>compass create 'proj'</code> command)</li>
 <pre>
 # Require any additional compass plugins here.
 
@@ -73,17 +73,24 @@ javascripts_dir = "javascripts"
 # and then run:
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
 </pre>
-        </ol>
-        <h3>When you need to compress for production:</h3>
-        <ol>
-          <li>Create production branch</li>
+      </ol>
+      <h3>When you need to compress for production:</h3>
+      <ol>
+        <li>Create production branch</li>
 <pre>
 compass compile --output-style compressed --force &lt;directory name&gtad
 </pre>
-          <li>Verify that compresses CSS files were created</li>
-          <li>Merge into master (Sass uses a different directory, so no worry about losing formatting)</li>
-        </ol>
- 
+        <li>Verify that compresses CSS files were created</li>
+        <li>Merge into master (Sass uses a different directory, so no worry about losing formatting)</li>
+      </ol>
+
+      <h2>Favorite color scheme and image sites</h2>
+      <ul>
+        <li><a class="btn" href="http://www.colourlovers.com/">ColourLovers.com</a> Has patterns with corresponding color schemes for background images.</li>
+        <li><a class="btn" href="http://www.colourlovers.com/">Kuler</a> Annoying because it's all Flash, but you can upload an image and select colors from that.</li>
+        <li><a class="btn" href="http://www.patternhead.com/">PatternHead.com</a> For vector images.</li>
+      </ul>
+      
     </div>
 
     <div class="row-fluid">
