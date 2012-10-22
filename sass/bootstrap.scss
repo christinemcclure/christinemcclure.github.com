@@ -5819,16 +5819,6 @@ a.badge:hover {
 
 /* Customizations besides color */
 
-footer {
-  background: $footerColor;
-  padding: 10px 20px;
-  p {
-    display: inline-block;
-    float:right;
-    margin-top:7px;
-    color: $yellow;
-  }
-}
 pre{margin: 20px 0;}
 
 header.hero-unit, footer, .container-fluid{
@@ -5852,11 +5842,12 @@ header {
   }
 }
 
+
 footer {
-  text-align:center;
   background: $footerColor;
   padding: 10px 20px;
-  p { 
+  text-align:center;
+  p {
     color: $yellow;
     margin-top:7px;
   }

@@ -825,7 +825,7 @@ h2 small {
   font-size: 18px;
 }
 
-/* line 733, ../sass/bootstrap.scss */
+/* line 732, ../sass/bootstrap.scss */
 h3 small {
   font-size: 14px;
 }
@@ -6692,24 +6692,11 @@ a.badge:hover {
 
 /* Customizations besides color */
 /* line 5822, ../sass/bootstrap.scss */
-footer {
-  background: #bd1550;
-  padding: 10px 20px;
-}
-/* line 5825, ../sass/bootstrap.scss */
-footer p {
-  display: inline-block;
-  float: right;
-  margin-top: 7px;
-  color: #f8ca00;
-}
-
-/* line 5832, ../sass/bootstrap.scss */
 pre {
   margin: 20px 0;
 }
 
-/* line 5834, ../sass/bootstrap.scss */
+/* line 5824, ../sass/bootstrap.scss */
 header.hero-unit, footer, .container-fluid {
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
@@ -6718,13 +6705,48 @@ header.hero-unit, footer, .container-fluid {
   border-radius: 12px;
 }
 
-/* line 5839, ../sass/bootstrap.scss */
+/* line 5829, ../sass/bootstrap.scss */
 header.hero-unit a.btn:hover, footer a.btn:hover, .container-fluid a.btn:hover {
   background: #b3c914;
 }
 
-/* line 5842, ../sass/bootstrap.scss */
-header a {
-  float: right;
-  margin-top: -70px;
+/* line 5832, ../sass/bootstrap.scss */
+header {
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  /* line 5832, ../sass/bootstrap.scss */
+  header {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 5837, ../sass/bootstrap.scss */
+  header a {
+    float: right;
+    margin-top: -70px;
+  }
+}
+
+/* line 5846, ../sass/bootstrap.scss */
+footer {
+  background: #bd1550;
+  padding: 10px 20px;
+  text-align: center;
+}
+/* line 5850, ../sass/bootstrap.scss */
+footer p {
+  color: #f8ca00;
+  margin-top: 7px;
+}
+@media screen and (min-width: 1200px) {
+  /* line 5846, ../sass/bootstrap.scss */
+  footer {
+    text-align: left;
+  }
+  /* line 5856, ../sass/bootstrap.scss */
+  footer p {
+    display: inline-block;
+    float: right;
+  }
 }
