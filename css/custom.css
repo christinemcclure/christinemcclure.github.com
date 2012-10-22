@@ -6727,31 +6727,36 @@ header, footer {
 }
 
 /* line 30, ../sass/custom.scss */
+li a.btn {
+  margin: 4px 0;
+}
+
+/* line 34, ../sass/custom.scss */
 header {
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
-  /* line 30, ../sass/custom.scss */
+  /* line 34, ../sass/custom.scss */
   header {
     text-align: left;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 35, ../sass/custom.scss */
+  /* line 39, ../sass/custom.scss */
   header a {
     float: right;
     margin-top: -70px;
   }
 }
 
-/* line 43, ../sass/custom.scss */
+/* line 47, ../sass/custom.scss */
 .container-fluid {
   width: 90%;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 1200px) {
-  /* line 43, ../sass/custom.scss */
+  /* line 47, ../sass/custom.scss */
   .container-fluid {
     width: 80%;
     margin-top: 60px;
@@ -6759,23 +6764,23 @@ header {
   }
 }
 
-/* line 56, ../sass/custom.scss */
+/* line 60, ../sass/custom.scss */
 footer {
   background: #d5754b;
   padding: 10px 20px;
   text-align: center;
 }
-/* line 60, ../sass/custom.scss */
+/* line 64, ../sass/custom.scss */
 footer p {
   color: #3f2c26;
   margin-top: 7px;
 }
 @media screen and (min-width: 1200px) {
-  /* line 56, ../sass/custom.scss */
+  /* line 60, ../sass/custom.scss */
   footer {
     text-align: left;
   }
-  /* line 66, ../sass/custom.scss */
+  /* line 70, ../sass/custom.scss */
   footer p {
     display: inline-block;
     float: right;

@@ -27,6 +27,10 @@ header, footer {
   border: 3px solid darken($headerColor, 20%);
 }
 
+li a.btn {
+  margin: 4px 0;
+}
+
 header {
   text-align:center;
   @media screen and (min-width: 1200px) {
