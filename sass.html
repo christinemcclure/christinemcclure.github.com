@@ -47,7 +47,7 @@
         <li>Install compass gem, if necessary</li>
         <li>CD to project directory</li>
         <li><code>touch config.rb</code></li>
-        <li>Edit file as below, or change to match your file structure (comments are what's generated with the <code>compass create 'proj'</code> command)</li>
+        <li>Edit file as below, or change to match your file structure (comments are what's generated with the <code>compass create &lt;projectName&gt;</code> command)</li>
 <pre>
 # Require any additional compass plugins here.
 
@@ -79,7 +79,8 @@ javascripts_dir = "javascripts"
       <ol>
         <li>Create production branch</li>
 <pre>
-compass compile --output-style compressed --force &lt;directory name&gtad
+compass compile --output-style compressed --force &lt;directory name&gt
+                                                                    -ad  ?check this later
 </pre>
         <li>Verify that compresses CSS files were created</li>
         <li>Merge into master (Sass uses a different directory, so no worry about losing formatting)</li>
