@@ -56,14 +56,22 @@
           <li><code>git push origin master</code></li>
         </ol>
 
-        <h2>Delete a branch</h2>
-        <h3>Locally</h3>
+        <h2>Branches</h2>
+        <h3>Delete local</h3>
  <pre>
 git branch -D &lt;branch name&gt;
 </pre>
-        <h3>Remotely</h3>
+        <h3>Delete remote</h3>
 <pre>
 git push origin --delete &lt;branch name&gt;
+</pre>
+        <h3>List all remote and local branches</h3>
+<pre>
+git branch -a
+</pre>
+        <p>or:</p>
+<pre>
+git fetch
 </pre>
 
           <h2>Using Multiple GitHub Accounts</h2>
@@ -95,8 +103,15 @@ Host github-galvin.com
 </pre>
 
           <h2>Working in a project team</h2>
+          <h3>Starting the project with a fork</h3>
           <p>Always rebase before you start working to start with the latest version</p>
           <ol>
+            <li>Initial step: fork repo from original <br/>
+                or <br/>
+                clone your existing fork if using a different computer</li>
+            <li><code>git remote add upstream git@github-cam.com:&lt;master-repo-userName/repoName&gt;.git</code>
+              <p>Note <strong>github-cam</strong> to identify correct account.</p>
+            </li>
             <li><code>git checkout master</code> // on your branch master</li>
             <li><code>git pull upstream master</code> // from project remote branch master</li>
             <li><code>git checkout dev</code> // on branch dev</li>
@@ -104,6 +119,32 @@ Host github-galvin.com
             <li>&lt; Do work on dev branch, making commits locally &gt;</li>
             <li><code>$ git push origin dev -f</code> // on branch dev (need to force because now your commit numbers will be off from the rebase)</li>
             <li>Submit pull request from your branch on GitHub</li>
+          </ol>
+
+          <h3>Editing another coworker's code</h3>
+          <ol>
+            <li>Add their project info to your repo: <br/>
+              <code>git remote add &lt;branch-name-you-will-use:i.e. 'sam'&gt; git://github-cam.com/&lt;their-username/their-projectName&gt;.git</code>
+              <p>Note <strong>github-cam</strong> to identify correct account.</p>
+              <p>Using <strong>sam</strong> for this example.</p>
+            </li>
+            <li><code>git fetch sam</code>
+              <p>Will see something like:</p>
+<pre>
+ * [new branch]      dev        -> sam/dev
+ * [new branch]      gh-pages   -> sam/gh-pages
+ * [new branch]      master     -> sam/master
+</pre>
+            </li>
+            <li>Check our their working branch onto your own working branch <br/>
+              <code>git checkout -b sam-dev sam/dev</code>
+            </li>
+            <li>Make changes and commits.</li>
+            <li>Push to your version of their branch: <br/>
+              <code>git push origin sam-dev</code>
+            </li>
+            <li>From GitHub, select the <code>sam-dev</code> branch and create a pull request going to your coworker's branch. Make
+              sure to use the same branch of theirs (dev) that you pulled from.</li>
           </ol>
     </div>
 
