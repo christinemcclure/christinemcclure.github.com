@@ -4,6 +4,12 @@
 /* Color Scheme
     From: http://www.colourlovers.com/pattern/1396072/Fifties
 */
+@media (min-width: 768px) {
+  /* line 46, ../sass/_base.scss */
+  .push {
+    margin: 30px 0;
+  }
+}
 /*
  * Bootstrap v2.1.1
  *
