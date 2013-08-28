@@ -10,7 +10,7 @@ pre{margin: 20px 0;}
 body {
   margin-top:-30px;
   padding-top: 30px;
-  background:url("/img/japanese-transparent.png");
+  background:url("/img/glasses.png");
 }
 
 
@@ -24,7 +24,7 @@ header.hero-unit, footer, .container-fluid {
 }
 
 header, footer {
-  border: 3px solid darken($headerColor, 20%);
+  border: 3px solid $headerOutline;
 }
 
 li a.btn {

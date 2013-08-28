@@ -2,11 +2,7 @@
 /* bootstrap */
 /* base */
 /* Color Scheme
-    From: http://www.colourlovers.com/palette/848743/(%E2%97%95_%E2%80%9D_%E2%97%95)
-*/
-/* my additions */
-/* Color and pattern Scheme from
-http://www.colourlovers.com/pattern/1181271/japanese_art_1
+    From: http://www.colourlovers.com/pattern/1396072/Fifties
 */
 /*
  * Bootstrap v2.1.1
@@ -50,7 +46,7 @@ html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  color: #3f2c26;
+  color: #676a7b;
 }
 
 /* line 49, ../sass/_bootstrap.scss */
@@ -196,19 +192,19 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
-  color: #3f2c26;
-  background-color: #3f2c26;
+  color: #676a7b;
+  background-color: #676a7b;
 }
 
 /* line 176, ../sass/_bootstrap.scss */
 a {
-  color: #c52723;
+  color: #ee5c5d;
   text-decoration: none;
 }
 
 /* line 181, ../sass/_bootstrap.scss */
 a:hover {
-  color: #c5ad4b;
+  color: #eff2eb;
   text-decoration: underline;
 }
 
@@ -268,7 +264,7 @@ a:hover {
 .navbar-static-top .container,
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
-  background: #e4d9ab;
+  background: #eff2eb;
   width: 940px;
 }
 
@@ -681,8 +677,8 @@ a:hover {
 .container-fluid {
   padding: 20px;
   margin: 0 auto;
-  background: #e4d9ab;
-  border: 6px solid #3f2c26;
+  background: #eff2eb;
+  border: 6px solid #676a7b;
   *zoom: 1;
 }
 
@@ -1032,7 +1028,7 @@ pre {
 /* line 871, ../sass/_bootstrap.scss */
 code {
   padding: 2px 4px;
-  color: #9a1e1b;
+  color: #676a7b;
   background-color: #f7f7f9;
   border: 1px solid #e1e1e8;
 }
@@ -3552,11 +3548,11 @@ button.close {
   font-size: 14px;
   line-height: 20px;
   *line-height: 20px;
-  color: #c52723;
+  color: #eff2eb;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
-  background-color: #c5ad4b;
+  background-color: #9b9c9e;
   *background-color: #e6e6e6;
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#e6e6e6));
   background-image: -webkit-linear-gradient(top, white, #e6e6e6);
@@ -3564,11 +3560,11 @@ button.close {
   background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
   background-image: -moz-linear-gradient(top, white, #e6e6e6);
   background-repeat: repeat-x;
-  background: #d1bf72;
-  border: 1px solid #816f29;
+  background: #b5b6b7;
+  border: 1px solid #68696b;
   *border: 0;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  border-bottom-color: #332d11;
+  border-bottom-color: #363637;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -4378,8 +4374,8 @@ input[type="submit"].btn.btn-mini {
 /* line 3772, ../sass/_bootstrap.scss */
 .nav > li > a:hover {
   text-decoration: none;
-  background-color: #c5ad4b;
-  background-color: #6f4d43;
+  background-color: #676a7b;
+  background-color: #9b9c9e;
 }
 
 /* line 3778, ../sass/_bootstrap.scss */
@@ -4514,7 +4510,7 @@ input[type="submit"].btn.btn-mini {
 /* line 3890, ../sass/_bootstrap.scss */
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover {
-  color: #c5ad4b;
+  color: #eff2eb;
   cursor: default;
   background-color: #ffffff;
   border: 1px solid #ddd;
@@ -4535,8 +4531,8 @@ input[type="submit"].btn.btn-mini {
 /* line 3909, ../sass/_bootstrap.scss */
 .nav-pills > .active > a,
 .nav-pills > .active > a:hover {
-  color: #c5ad4b;
-  background-color: #3f2c26;
+  color: #eff2eb;
+  background-color: #ee5c5d;
 }
 
 /* line 3914, ../sass/_bootstrap.scss */
@@ -6641,7 +6637,7 @@ a.badge:hover {
 .hero-unit {
   padding: 20px;
   margin-bottom: 30px;
-  background-color: #d5754b;
+  background-color: #ee5c5d;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -6704,7 +6700,7 @@ pre {
 body {
   margin-top: -30px;
   padding-top: 30px;
-  background: url("/img/japanese-transparent.png");
+  background: url("/img/glasses.png");
 }
 
 /* line 18, ../sass/custom.scss */
@@ -6718,12 +6714,12 @@ header.hero-unit, footer, .container-fluid {
 
 /* line 23, ../sass/custom.scss */
 header.hero-unit a.btn:hover, footer a.btn:hover, .container-fluid a.btn:hover {
-  background: #6f4d43;
+  background: #9b9c9e;
 }
 
 /* line 26, ../sass/custom.scss */
 header, footer {
-  border: 3px solid #974623;
+  border: 3px solid #676a7b;
 }
 
 /* line 30, ../sass/custom.scss */
@@ -6766,13 +6762,13 @@ header {
 
 /* line 60, ../sass/custom.scss */
 footer {
-  background: #d5754b;
+  background: #676a7b;
   padding: 10px 20px;
   text-align: center;
 }
 /* line 64, ../sass/custom.scss */
 footer p {
-  color: #3f2c26;
+  color: #eff2eb;
   margin-top: 7px;
 }
 @media screen and (min-width: 1200px) {

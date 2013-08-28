@@ -2,45 +2,34 @@
 
 
 /* Color Scheme
-    From: http://www.colourlovers.com/palette/848743/(%E2%97%95_%E2%80%9D_%E2%97%95)
+    From: http://www.colourlovers.com/pattern/1396072/Fifties
 */
 
-$purple: rgb(73,10,61);
-$red:    rgb(189,21,80);
-$orange: rgb(233,127,2);
-$yellow: rgb(248,202,0);
-$green:  rgb(138,155,15);
-/* my additions */
-$orange: rgb(213,117,75);
-
-/* Color and pattern Scheme from
-http://www.colourlovers.com/pattern/1181271/japanese_art_1
-*/
-
-$tan: rgb(234,195,136);
-$red: darken(rgb(221,66,62),10%);
-$brown: rgb(63,44,38);
-$beige: rgb(162,163,132);
-$gold: rgb(197,173,75);
+$white: rgb(239,242,235);
+$ltGrey: rgb(190,188,189);
+$medGrey: rgb(155,156,158);
+$dkGrey: rgb(103,106,123);
+$red: rgb(238,92,93);
 
 
-$backgroundColor: $brown;
-$containerColor: lighten($gold,25%);
-$headerColor: $orange;
-$footerColor: $orange;
-$footerTextColor: $brown;
-$textColor: $brown;
+$backgroundColor: $dkGrey;
+$containerColor: $white;
+$headerColor: $red;
+$headerOutline: $dkGrey;
+$footerColor: $dkGrey;
+$footerTextColor: $white;
+$textColor: $dkGrey;
 $linkColor:$red;
-$btnColor: $gold;
-$btnTextColor: $red;
-$linkHover: $gold;
-$highlightColorText: $gold;
-$highlightColorBackground: $gold;
-$highlightColorBkgHover: lighten($brown,15%);
-$codeColor: darken($red,10%);
-$darkBorder: $brown;
-$activeBtnText: $gold;
-$activeBtnBackground: $brown;
+$btnColor: $medGrey;
+$btnTextColor: $white;
+$linkHover: $white;
+$highlightColorText: $dkGrey;
+$highlightColorBackground: $dkGrey;
+$highlightColorBkgHover: $medGrey;
+$codeColor: $dkGrey;
+$darkBorder: $dkGrey;
+$activeBtnText: $white;
+$activeBtnBackground: $red;
 
 $radius: 12px;
 
