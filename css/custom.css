@@ -52,7 +52,7 @@ html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  color: #676a7b;
+  color: #484a54;
 }
 
 /* line 49, ../sass/_bootstrap.scss */
@@ -198,8 +198,8 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
-  color: #676a7b;
-  background-color: #676a7b;
+  color: #484a54;
+  background-color: #484a54;
 }
 
 /* line 176, ../sass/_bootstrap.scss */
@@ -684,7 +684,7 @@ a:hover {
   padding: 20px;
   margin: 0 auto;
   background: #eff2eb;
-  border: 6px solid #676a7b;
+  border: 6px solid #484a54;
   *zoom: 1;
 }
 
@@ -1034,7 +1034,7 @@ pre {
 /* line 871, ../sass/_bootstrap.scss */
 code {
   padding: 2px 4px;
-  color: #676a7b;
+  color: #484a54;
   background-color: #f7f7f9;
   border: 1px solid #e1e1e8;
 }
@@ -4380,7 +4380,7 @@ input[type="submit"].btn.btn-mini {
 /* line 3772, ../sass/_bootstrap.scss */
 .nav > li > a:hover {
   text-decoration: none;
-  background-color: #676a7b;
+  background-color: #484a54;
   background-color: #9b9c9e;
 }
 
@@ -6725,7 +6725,7 @@ header.hero-unit a.btn:hover, footer a.btn:hover, .container-fluid a.btn:hover {
 
 /* line 26, ../sass/custom.scss */
 header, footer {
-  border: 3px solid #676a7b;
+  border: 3px solid #484a54;
 }
 
 /* line 30, ../sass/custom.scss */
@@ -6768,7 +6768,7 @@ header {
 
 /* line 60, ../sass/custom.scss */
 footer {
-  background: #676a7b;
+  background: #484a54;
   padding: 10px 20px;
   text-align: center;
 }
