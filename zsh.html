@@ -40,16 +40,19 @@
     </div>
     <div class="row-fluid">
         <h2>Installation</h2>
-        <ol>
-          <li>Just use <a class="btn" href="https://github.com/karlstolley/lab/wiki/Oh-My-Zsh">Karl's directions</a> to start.</li>
-          <li>On Mac, change the shell to point to zsh:</li>
-        </ol>
-    
-<pre>
-$ chsh -s /bin/zsh &lt;username&gt;
-</pre>
-
-        <h2>Shortcut aliases:</h2>
+        <h3>Mac/Linux</h3>
+        <ul>
+          <li>Use <a class="btn" href="https://github.com/karlstolley/lab/wiki/Oh-My-Zsh">Karl's directions</a> to start.</li>
+          <li>change the shell to point to zsh:
+            <pre>
+            $ chsh -s /bin/zsh &lt;username&gt;
+            </pre>          
+          </li>
+        </ul>
+        <h3>Windows</h3>
+        <p>Add  to C:\users\< username >\.bash_profile</p>
+        
+        <h3>My aliases:</h3>
         <pre>
 # Clear screen
 alias c='clear'
@@ -69,8 +72,8 @@ alias gitdw='git diff --color-words'
 alias gitra='git remote add'
 alias gitcb='git checkout -b'
         </pre>
-        <p><strong>NOTE:</strong> On Windows, must still use the 'git' commapnd prefix, and the alias will look like this:</p>
-        <pre>s = status</pre>
+
+        
     </div>
 
     <div class="row-fluid">
